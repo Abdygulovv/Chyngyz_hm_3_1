@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Имя"
+        android:layout_marginHorizontal="18dp"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:textColor="@color/grey"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp" />
+
+    <EditText
+        android:id="@+id/et_surname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Фамилия"
+        android:layout_marginHorizontal="18dp"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/black"
+        android:textColor="@color/grey"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Возраст"
+        android:layout_marginHorizontal="18dp"
+        android:paddingStart="20dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/grey"
+        android:background="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@id/et_surname"
+        android:layout_marginTop="50dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/et_age"
+        android:layout_marginTop="80dp"
+        android:text="ВОЙТИ"
+        android:layout_marginHorizontal="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
